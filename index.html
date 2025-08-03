@@ -24,18 +24,25 @@
         }
 
         .botao{
+            width: 100px;
             margin: 1rem;
             padding: 1rem 4rem;
             background-image: var(--linear-default);
             border-radius: 1rem;
             display: flex;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .botao:hover > *{
+            text-decoration: underline;
         }
         
         .botao > *{
             margin: 0 auto;
-            color: #fff;
             font-weight: bold;
             text-decoration: none;
+
         }
 
         #btn-whatsapp{
@@ -50,12 +57,6 @@
             background-image: var(--linear-tiktok);
         }
         
-        @media (max-width:750px) {
-            .botao{
-                width: 100px;
-            }
-        }
-        
         @media (max-width:400px) {
             .botao{
                 width: 50vw;
@@ -68,21 +69,21 @@
     <h1>Botão</h1>
     <p>Esse site é para reaalizar testes de botão para redirecionar o usuário para um contado de WhatsApp, Instagram e TikTok</p>
     <div class="botoes-grupo">
-        <div class="botao" id="btn-whatsapp">
-            <a href="https://wa.me/qr/K3MP7PK7AFZEN1" target="_blank">
+        <a href="https://wa.me/qr/K3MP7PK7AFZEN1" target="_blank" class="botao" id="btn-whatsapp">
+            <div>
                 <i class='fa-brands fa-whatsapp fa-flip'></i> WhatsApp
-            </a>
-        </div>
-        <div class="botao" id="btn-instagram">
-            <a href="https://www.instagram.com/cafequente_al_/" target="_blank">
+            </div>
+        </a>
+        <a href="https://www.instagram.com/cafequente_al_/" target="_blank" class="botao" id="btn-instagram">
+            <div>
                 <i class="fa-brands fa-instagram"></i> Instagram
-            </a>
-        </div>
-        <div class="botao" id="btn-tiktok">
-            <a href="https://www.tiktok.com/@cafequente_al_" target="_blank">
+            </div>
+        </a>
+        <a href="https://www.tiktok.com/@cafequente_al_" target="_blank" class="botao" id="btn-tiktok">
+            <div>
                 <i class="fa-brands fa-tiktok"></i> TikTok
-            </a>
-        </div>
+            </div>
+        </a>
     </div>
 </body>
 </html>

@@ -6,14 +6,21 @@
     <title>Site Botões</title>
     <style>
         @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css");
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
-        * {margin:0; padding:0;}
+        * {margin:0; padding:0;font-family: "Outfit", sans-serif;}
 
         :root{
             --linear-default: linear-gradient(135deg, #fff, #444, #000);
             --linear-whatsapp: linear-gradient(135deg, lime, rgb(0, 37, 0));
             --linear-instagram: linear-gradient(135deg, rgb(247, 196, 54), rgb(237, 47, 119), rgb(106, 39, 208));
             --linear-tiktok: linear-gradient(135deg, rgb(237, 20, 63), black, rgb(6, 178, 231));
+        }
+
+        html{
+            background-color: #000;
+            text-align: center;
+            color: #fff;
         }
 
         .botoes-grupo{
@@ -24,7 +31,7 @@
         }
 
         .botao{
-            width: 100px;
+            width: 150px;
             margin: 1rem;
             padding: 1rem 4rem;
             background-image: var(--linear-default);
@@ -32,17 +39,18 @@
             display: flex;
             color: #fff;
             text-decoration: none;
+            transition: .1s linear;
         }
 
-        .botao:hover > *{
+        .botao:hover{
             text-decoration: underline;
+            font-size: 1.15rem;
         }
         
         .botao > *{
             margin: 0 auto;
             font-weight: bold;
             text-decoration: none;
-
         }
 
         #btn-whatsapp{
@@ -66,8 +74,8 @@
     </style>
 </head>
 <body>
-    <h1>Botão</h1>
-    <p>Esse site é para reaalizar testes de botão para redirecionar o usuário para um contado de WhatsApp, Instagram e TikTok</p>
+    <h1>Teste Botões</h1>
+    <p>Bem vindo ao site! Contatos de WhatsApp, Instagram e TikTok abaixo:</p>
     <div class="botoes-grupo">
         <a href="https://wa.me/qr/K3MP7PK7AFZEN1" target="_blank" class="botao" id="btn-whatsapp">
             <div>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Botões</title>
+    <style>
+        @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css");
+
+        * {margin:0; padding:0;}
+
+        :root{
+            --linear-default: linear-gradient(135deg, #fff, #444, #000);
+            --linear-whatsapp: linear-gradient(135deg, lime, rgb(0, 37, 0));
+            --linear-instagram: linear-gradient(135deg, rgb(247, 196, 54), rgb(237, 47, 119), rgb(106, 39, 208));
+            --linear-tiktok: linear-gradient(135deg, rgb(237, 20, 63), black, rgb(6, 178, 231));
+        }
+
+        .botoes-grupo{
+            margin: 2rem auto;
+            display: grid;
+            justify-content: center;
+            justify-items: center;
+        }
+
+        .botao{
+            margin: 1rem;
+            padding: 1rem 4rem;
+            background-image: var(--linear-default);
+            border-radius: 1rem;
+            display: flex;
+        }
+        
+        .botao > *{
+            margin: 0 auto;
+            color: #fff;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        #btn-whatsapp{
+            background-image: var(--linear-whatsapp);
+        }
+
+        #btn-instagram{
+            background-image: var(--linear-instagram);
+        }
+
+        #btn-tiktok{
+            background-image: var(--linear-tiktok);
+        }
+        
+        @media (max-width:750px) {
+            .botao{
+                width: 100px;
+            }
+        }
+        
+        @media (max-width:400px) {
+            .botao{
+                width: 50vw;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Botão</h1>
+    <p>Esse site é para reaalizar testes de botão para redirecionar o usuário para um contado de WhatsApp, Instagram e TikTok</p>
+    <div class="botoes-grupo">
+        <div class="botao" id="btn-whatsapp">
+            <a href="https://wa.me/qr/K3MP7PK7AFZEN1" target="_blank">
+                <i class='fa-brands fa-whatsapp fa-flip'></i> WhatsApp
+            </a>
+        </div>
+        <div class="botao" id="btn-instagram">
+            <a href="https://www.instagram.com/cafequente_al_/" target="_blank">
+                <i class="fa-brands fa-instagram"></i> Instagram
+            </a>
+        </div>
+        <div class="botao" id="btn-tiktok">
+            <a href="https://www.tiktok.com/@cafequente_al_" target="_blank">
+                <i class="fa-brands fa-tiktok"></i> TikTok
+            </a>
+        </div>
+    </div>
+</body>
+</html>
